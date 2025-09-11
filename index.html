@@ -72,11 +72,11 @@
     // ===== CONFIG: EDIT THESE =====
     // IdP-initiated SSO start URL (PingFederate). Example:
     // https://pf.example.com/idp/startSSO.ping?PartnerSpId=YourSP&TargetResource=<this-page-url-encoded>
-    const PF_SSO_START = 'https://<pf-host>/idp/startSSO.ping?PartnerSpId=<YourSPConnectionId>&TargetResource='
+    const PF_SSO_START = 'https://ilantus7-dev-ed.develop.my.salesforce.com&TargetResource='
                        + encodeURIComponent(window.location.origin + window.location.pathname + '?sso=1');
 
     // If you have an API that actually performs password reset, put it here (HTTPS, CORS-enabled).
-    const PASSWORD_RESET_API = ''; // e.g., 'https://api.example.com/password-reset'
+    const PASSWORD_RESET_API = 'https://rohanb37.github.io/passwordreset/'; // e.g., 'https://api.example.com/password-reset'
 
     // ===== HELPERS =====
     const $ = (id) => document.getElementById(id);
@@ -157,3 +157,4 @@
   </script>
 </body>
 </html>
+
